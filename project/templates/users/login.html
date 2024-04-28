@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block title %}
+  {% trans "login_title"|capfirst %}
+{% endblock title %}
+
+{% block content %}
+<section class="login">
+  <div class="login__body _container">
+    <h1>{% trans "login_title"|capfirst %}</h1>
+    <div class="section__content login__content">
+      {% if form.is_multipart %}
+        <form class="form" enctype="multipart/form-data" method="post">
+      {% else %}
+        <form class="form" method="post">
+      {% endif %}
+        {% csrf_token %}
+      
+        {% include "includes/form.html" %}
+          
+        <div class="form__button">
+          {% include "includes/submit_btn.html" with value="Войти" %}
+          <a class="form__link" href="{% url "users:signup" %}">{% trans "no_account"|capfirst %}? <span class="color_blue">{% trans "register_text"|capfirst %}</span></a>
+        </div>
+        <div class="form__extra">
+          <a class="form__link" href="{% url "users:password_reset" %}">{% trans "forgot_password"|capfirst %}? <span class="color_blue">{% trans "reset_password_text"|capfirst %}</span></a>
+        </div> 
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock content %}

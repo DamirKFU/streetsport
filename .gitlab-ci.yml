@@ -1,0 +1,42 @@
+stages:
+  - linting
+  - test
+
+flake8:
+  stage: linting
+  image: registry.gitlab.com/pipeline-components/flake8:latest
+  script:
+    - pip install -r requirements/test.txt
+    - flake8 --verbose .
+
+black:
+  stage: linting
+  image: registry.gitlab.com/pipeline-components/black:latest
+  script:
+    - black --config pyproject.toml --check --verbose -- .
+
+django_test:
+  stage: test
+  image: python:3.10
+  services:
+    - postgres
+    - rabbitmq:latest
+
+  variables:
+    POSTGRES_DB: postgres
+    POSTGRES_USER: postgres
+    RABBITMQ_DEFAULT_USER: guest
+    RABBITMQ_DEFAULT_PASS: guest
+    AMQP_URL: 'amqp://guest:guest@rabbitmq:5672'
+    Host: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+
+  script:
+    - pip install -r requirements/prod.txt
+    - pip install parameterized==0.9.0
+    - export PG_HOST=postgres
+    - export PG_DB_NAME=postgres
+    - export PG_USER=postgres
+    - cd project
+    - python manage.py migrate
+    - python manage.py test

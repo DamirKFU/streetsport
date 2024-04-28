@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-13 09:03+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\feedback\models.py:11
+msgid "new_status"
+msgstr "New status"
+#: .\feedback\models.py:12
+msgid "pending_status"
+msgstr "Pending status"
+#: .\feedback\models.py:13
+msgid "complete_status"
+msgstr "Complete status"
+#: .\feedback\views.py:42
+msgid "message_form_success"
+msgstr "Message form submitted successfully"
+#: .\project\settings.py:140
+msgid "Russian"
+msgstr "Russian"
+#: .\project\settings.py:141
+msgid "English"
+msgstr "English"
+
+#: .\streetsport\apps.py:10
+msgid "streetsport app"
+msgstr "Streetsport app"
+#: .\streetsport\models.py:23 .\streetsport\models.py:55
+msgid "title"
+msgstr "Title"
+#: .\streetsport\models.py:24 .\streetsport\models.py:56
+msgid "title_field_help"
+msgstr "Help text for title field"
+#: .\streetsport\models.py:29 .\streetsport\models.py:89
+msgid "normalize_title"
+msgstr "Normalize title"
+#: .\streetsport\models.py:32 .\streetsport\models.py:92
+msgid "normalize_title_field_help"
+msgstr "Help text for normalize title field"
+#: .\streetsport\models.py:43 .\streetsport\models.py:108
+msgid "normalize_title_validation_error"
+msgstr "Normalization title validation error"
+#: .\streetsport\models.py:49 .\streetsport\models.py:81
+msgid "game"
+msgstr "Game"
+#: .\streetsport\models.py:50
+msgid "games"
+msgstr "Games"
+#: .\streetsport\models.py:63
+msgid "lead"
+msgstr "Lead"
+#: .\streetsport\models.py:64
+msgid "lead_field_help"
+msgstr "Help text for lead field"
+#: .\streetsport\models.py:72
+msgid "teammates"
+msgstr "Teammates"
+#: .\streetsport\models.py:73
+msgid "teammates_field_help"
+msgstr "Help text for teammates field"
+#: .\streetsport\models.py:82
+msgid "game_field_help"
+msgstr "Help text for game field"
+#: .\streetsport\models.py:95 .\users\models.py:72
+msgid "rating"
+msgstr "Rating"
+#: .\streetsport\models.py:96 .\users\models.py:73
+msgid "rating_field_help"
+msgstr "Help text for rating field"
+#: .\streetsport\models.py:121
+msgid "team"
+msgstr "Team"
+#: .\streetsport\models.py:122
+msgid "teams"
+msgstr "Teams"
+#: .\streetsport\models.py:129 .\streetsport\models.py:137
+msgid "team_one"
+msgstr "Team one"
+#: .\streetsport\models.py:130 .\streetsport\models.py:138
+msgid "team_one_field_help"
+msgstr "Help text for team one field"
+#: .\streetsport\models.py:143
+msgid "start"
+msgstr "Start"
+#: .\streetsport\models.py:144
+msgid "start_field_help"
+msgstr "Help text for start field"
+#: .\streetsport\models.py:150
+msgid "description"
+msgstr "Description"
+#: .\streetsport\models.py:152
+msgid "description_field_help"
+msgstr "Help text for description field"
+#: .\streetsport\models.py:158
+msgid "location"
+msgstr "Location"
+#: .\streetsport\models.py:160
+msgid "location_field_help"
+msgstr "Help text for location field"
+#: .\streetsport\models.py:168
+msgid "team_equal_validation_error"
+msgstr "Team equal validation error"
+#: .\streetsport\models.py:172
+msgid "order"
+msgstr "Order"
+#: .\streetsport\models.py:173
+msgid "orders"
+msgstr "Orders"
+#: .\streetsport\validators.py:11
+msgid "start_validation_error"
+msgstr "Start validation error"
+#: .\templates\about\description.html:6 .\templates\about\description.html:10
+msgid "about_title"
+msgstr "About Title"
+#: .\templates\about\description.html:13
+msgid "about_text"
+msgstr "About text"
+#: .\templates\feedback\feedback.html:6
+msgid "feedback_title"
+msgstr "Feedback Title"
+#: .\templates\homepage\index.html:6
+msgid "homepage_title"
+msgstr "Homepage Title"
+#: .\templates\includes\form.html:37
+msgid "submit"
+msgstr "Submit"
+#: .\templates\users\login.html:5 .\templates\users\signup.html:5
+msgid "login_title"
+msgstr "Login Title"
+#: .\templates\users\login.html:26
+msgid "forgot_password"
+msgstr "Forgot Password?"
+#: .\templates\users\login.html:27
+msgid "no_account"
+msgstr "Don’t have an account?"
+#: .\templates\users\password_change.html:5
+msgid "password_change_title"
+msgstr "Password Change Title"
+#: .\templates\users\password_change_done.html:5#: .\templates\users\password_reset_complete.html:5
+#: .\templates\users\password_reset_done.html:5
+msgid "success"
+msgstr "Success"
+#: .\templates\users\password_change_done.html:12
+msgid "password_change_done_text"
+msgstr "Your password has been changed successfully"
+#: .\templates\users\password_change_done.html:13#: .\templates\users\password_reset_complete.html:12
+#: .\templates\users\password_reset_done.html:12
+msgid "home"
+msgstr "Home"
+#: .\templates\users\password_reset.html:5#: .\templates\users\password_reset_confirm.html:5
+msgid "reset_title"
+msgstr "Reset Title"
+#: .\templates\users\password_reset_complete.html:11
+msgid "password_reset_complite_text"
+msgstr "Your password has been reset successfully"
+#: .\templates\users\password_reset_done.html:11
+msgid "password_reset_done_text"
+msgstr "Password reset is done. Check your email."
+#: .\templates\users\signup_email.html:2
+msgid "activate_email_title"
+msgstr "Activate Email Title"
+#: .
